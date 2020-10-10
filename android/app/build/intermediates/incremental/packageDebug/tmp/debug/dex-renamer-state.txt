@@ -1,0 +1,4 @@
+#Thu Sep 10 04:20:20 IDT 2020
+base.0=C\:\\esti-projects\\react-native-master\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
