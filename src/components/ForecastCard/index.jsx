@@ -36,13 +36,10 @@ export default class ForecastCard extends Component {
     time = hours + ':' + minutes.substr(-2);
     return(
       <View>
-                      <Text style={styles.time}>{time}</Text>
-
-        <Image style={{width:60, height:60}} source={{uri:"https://openweathermap.org/img/w/" + item.item.weather[0].icon + ".png"}} />
-              <Text style={styles.time}>{Math.round( item.item.main.temp * 10) / 10 }&#8451;</Text>
-
+          <Text style={styles.time}>{time}</Text>
+          <Image style={{width:60, height:60}} source={{uri:"https://openweathermap.org/img/w/" + item.item.weather[0].icon + ".png"}} />
+          <Text style={styles.time}>{Math.round( item.item.main.temp * 10) / 10 }&#8451;</Text>
       </View>
-
     )
   }
   _renderContent(){
@@ -56,14 +53,14 @@ export default class ForecastCard extends Component {
     var hours = date.getHours();
     var minutes = "0" + date.getMinutes();
     let sunset = hours + ':' + minutes.substr(-2);
-    return (<View>
+    return (
+    <View>
       <Divider style={{ backgroundColor: '#dfe6e9', marginVertical:10}} />
-
-            <Text style={styles.notes}>Sunrise: {sunrise}</Text>
-            <Text style={styles.notes}>Sunset: {sunset}</Text>
-            <Text style={styles.notes}>Description: {description}</Text>
-            <Text style={styles.notes}>wind speed: {content.wind.spead} {content.wind.deg}</Text>
-          </View>);
+          <Text style={styles.notes}>Sunrise: {sunrise}</Text>
+          <Text style={styles.notes}>Sunset: {sunset}</Text>
+          <Text style={styles.notes}>Description: {description}</Text>
+          <Text style={styles.notes}>wind speed: {content.wind.spead} {content.wind.deg}</Text>
+    </View>);
   }
   render(){
     return (
