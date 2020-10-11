@@ -1,3 +1,2 @@
-﻿# weatherApp
 
 # react-native-master
